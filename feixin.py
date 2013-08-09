@@ -68,75 +68,10 @@ print r.cookies
 r = s.post(contact_url,data={"ssid":s.cookies['webim_sessionid']} )
 print r.content
 print s.cookies['webim_sessionid']
-version = 11
+version = 4
 
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
-
-version += 1
-r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
-print r.url
-print r.json()
+while(1):
+    version += 1
+    r = s.post(connect_url + str(version) ,data={"ssid":s.cookies['webim_sessionid']} )
+    print r.url
+    print r.json()
