@@ -1,4 +1,4 @@
 py-webfeixin
 ============
 
-Python based WebFeixin
+用python登陆飞信网页版。
